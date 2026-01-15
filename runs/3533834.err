@@ -1,0 +1,135 @@
+/home/aalanov/.local/lib/python3.9/site-packages/wandb/sdk/launch/builder/build.py:11: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/home/aalanov/.local/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:149: UserWarning: /home/aalanov/.conda/envs/repa did not contain ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] as expected! Searching further paths...
+  warn(msg)
+/home/aalanov/.local/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:149: UserWarning: /opt/software/python/anaconda/2023_03/lib:/opt/software/mpi/openmpi/v5.0.3/lib:/opt/ohpc/pub/compiler/gcc/8.3.0/lib64:/opt/software/tools/autotools/libtool/v2.4.7/lib did not contain ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] as expected! Searching further paths...
+  warn(msg)
+/home/aalanov/.local/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:149: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('/opt/software/tools/autotools/automake/v1.16.5/man'), PosixPath('/opt/software/tools/autotools/autoconf/v2.72/man')}
+  warn(msg)
+/home/aalanov/.local/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:149: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('1;/opt/ohpc/pub/modulefiles'), PosixPath('1;/opt/ohpc/private/modulefiles'), PosixPath('1')}
+  warn(msg)
+/home/aalanov/.local/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:149: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('1;StdEnv'), PosixPath('1;openmpi/5.0.3'), PosixPath('tools/autotools/v2.72'), PosixPath('1;gnu8/8.3.0'), PosixPath('1;Python/Anaconda_v03.2023'), PosixPath('1')}
+  warn(msg)
+/home/aalanov/.local/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:149: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('1;/opt/ohpc/pub/modulefiles/gnu8/8.3.0'), PosixPath('1;/opt/ohpc/pub/modulefiles/Python/Anaconda_v03.2023'), PosixPath('1;/opt/ohpc/pub/modulefiles/openmpi/5.0.3'), PosixPath('1;/opt/ohpc/pub/modulefiles/StdEnv.lua'), PosixPath('1')}
+  warn(msg)
+/home/aalanov/.local/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:149: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('1')}
+  warn(msg)
+/home/aalanov/.local/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:149: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('/opt/ohpc/private/modulefiles')}
+  warn(msg)
+/home/aalanov/.local/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:149: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('gnu8/8.3.0'), PosixPath('StdEnv'), PosixPath('Python/Anaconda_v03.2023'), PosixPath('tools/autotools/v2.72'), PosixPath('openmpi/5.0.3')}
+  warn(msg)
+/home/aalanov/.local/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:149: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('tools/autotools')}
+  warn(msg)
+/home/aalanov/.local/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:149: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('1;/opt/software/mpi/openmpi/v5.0.3/bin'), PosixPath('1;/home/aalanov/.local/bin'), PosixPath('1;/opt/ohpc/pub/compiler/gcc/8.3.0/bin'), PosixPath('1;/usr/sbin'), PosixPath('1;/opt/software/tools/autotools/libtool/v2.4.7/bin'), PosixPath('1;/usr/local/bin'), PosixPath('1;/usr/local/sbin'), PosixPath('1;/opt/software/tools/autotools/autoconf/v2.72/bin'), PosixPath('1;/opt/software/python/anaconda/2023_03/condabin'), PosixPath('1;/opt/software/tools/autotools/automake/v1.16.5/bin'), PosixPath('1'), PosixPath('1;/usr/bin'), PosixPath('1;/home/aalanov/bin')}
+  warn(msg)
+/home/aalanov/.local/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:149: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('1'), PosixPath('1;/opt/software/tools/autotools/libtool/v2.4.7/include')}
+  warn(msg)
+/home/aalanov/.local/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:149: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('1'), PosixPath('1;/opt/software/tools/autotools/libtool/v2.4.7/lib'), PosixPath('1;/opt/software/mpi/openmpi/v5.0.3/lib'), PosixPath('1;/opt/ohpc/pub/compiler/gcc/8.3.0/lib64')}
+  warn(msg)
+/home/aalanov/.local/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:149: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('1;/opt/software/tools/autotools/autoconf/v2.72/man'), PosixPath('1'), PosixPath('1;/opt/ohpc/pub/compiler/gcc/8.3.0/share/man'), PosixPath('2;/opt/software/tools/autotools/automake/v1.16.5/man')}
+  warn(msg)
+/home/aalanov/.local/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:149: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('() {  eval $($LMOD_DIR/ml_cmd "$@")\n}')}
+  warn(msg)
+/home/aalanov/.local/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:149: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('/tmp/job-3533834/torchelastic_yv37c8kl/416ee438-56c5-4245-98bd-722e25478e08_sifv2hpi/attempt_0/0/error.json')}
+  warn(msg)
+/home/aalanov/.local/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:149: UserWarning: WARNING: Compute capability < 7.5 detected! Only slow 8-bit matmul is supported for your GPU!
+  warn(msg)
+Traceback (most recent call last):
+  File "/home/aalanov/.conda/envs/repa/lib/python3.9/site-packages/diffusers/utils/import_utils.py", line 1016, in _get_module
+    return importlib.import_module("." + module_name, self.__name__)
+  File "/home/aalanov/.conda/envs/repa/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/aalanov/.conda/envs/repa/lib/python3.9/site-packages/diffusers/models/autoencoders/__init__.py", line 1, in <module>
+    from .autoencoder_asym_kl import AsymmetricAutoencoderKL
+  File "/home/aalanov/.conda/envs/repa/lib/python3.9/site-packages/diffusers/models/autoencoders/autoencoder_asym_kl.py", line 22, in <module>
+    from ..modeling_utils import ModelMixin
+  File "/home/aalanov/.conda/envs/repa/lib/python3.9/site-packages/diffusers/models/modeling_utils.py", line 41, in <module>
+    from ..quantizers import DiffusersAutoQuantizer, DiffusersQuantizer
+  File "/home/aalanov/.conda/envs/repa/lib/python3.9/site-packages/diffusers/quantizers/__init__.py", line 16, in <module>
+    from .auto import DiffusersAutoQuantizer
+  File "/home/aalanov/.conda/envs/repa/lib/python3.9/site-packages/diffusers/quantizers/auto.py", line 22, in <module>
+    from .bitsandbytes import BnB4BitDiffusersQuantizer, BnB8BitDiffusersQuantizer
+  File "/home/aalanov/.conda/envs/repa/lib/python3.9/site-packages/diffusers/quantizers/bitsandbytes/__init__.py", line 2, in <module>
+    from .utils import dequantize_and_replace, dequantize_bnb_weight, replace_with_bnb_linear
+  File "/home/aalanov/.conda/envs/repa/lib/python3.9/site-packages/diffusers/quantizers/bitsandbytes/utils.py", line 32, in <module>
+    import bitsandbytes as bnb
+  File "/home/aalanov/.local/lib/python3.9/site-packages/bitsandbytes/__init__.py", line 6, in <module>
+    from . import cuda_setup, utils, research
+  File "/home/aalanov/.local/lib/python3.9/site-packages/bitsandbytes/research/__init__.py", line 1, in <module>
+    from . import nn
+  File "/home/aalanov/.local/lib/python3.9/site-packages/bitsandbytes/research/nn/__init__.py", line 1, in <module>
+    from .modules import LinearFP8Mixed, LinearFP8Global
+  File "/home/aalanov/.local/lib/python3.9/site-packages/bitsandbytes/research/nn/modules.py", line 8, in <module>
+    from bitsandbytes.optim import GlobalOptimManager
+  File "/home/aalanov/.local/lib/python3.9/site-packages/bitsandbytes/optim/__init__.py", line 6, in <module>
+    from bitsandbytes.cextension import COMPILED_WITH_CUDA
+  File "/home/aalanov/.local/lib/python3.9/site-packages/bitsandbytes/cextension.py", line 20, in <module>
+    raise RuntimeError('''
+RuntimeError: 
+        CUDA Setup failed despite GPU being available. Please run the following command to get more information:
+
+        python -m bitsandbytes
+
+        Inspect the output of the command and see if you can locate CUDA libraries. You might need to add them
+        to your LD_LIBRARY_PATH. If you suspect a bug, please take the information from python -m bitsandbytes
+        and open an issue at: https://github.com/TimDettmers/bitsandbytes/issues
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/aalanov/laith/REPA/generate.py", line 17, in <module>
+    from diffusers.models import AutoencoderKL
+  File "<frozen importlib._bootstrap>", line 1055, in _handle_fromlist
+  File "/home/aalanov/.conda/envs/repa/lib/python3.9/site-packages/diffusers/utils/import_utils.py", line 1006, in __getattr__
+    module = self._get_module(self._class_to_module[name])
+  File "/home/aalanov/.conda/envs/repa/lib/python3.9/site-packages/diffusers/utils/import_utils.py", line 1018, in _get_module
+    raise RuntimeError(
+RuntimeError: Failed to import diffusers.models.autoencoders.autoencoder_kl because of the following error (look up to see its traceback):
+
+        CUDA Setup failed despite GPU being available. Please run the following command to get more information:
+
+        python -m bitsandbytes
+
+        Inspect the output of the command and see if you can locate CUDA libraries. You might need to add them
+        to your LD_LIBRARY_PATH. If you suspect a bug, please take the information from python -m bitsandbytes
+        and open an issue at: https://github.com/TimDettmers/bitsandbytes/issues
+E0115 17:26:49.246005 54670 site-packages/torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 1) local_rank: 0 (pid: 54709) of binary: /home/aalanov/.conda/envs/repa/bin/python3.9
+Traceback (most recent call last):
+  File "/home/aalanov/.conda/envs/repa/bin/torchrun", line 7, in <module>
+    sys.exit(main())
+  File "/home/aalanov/.conda/envs/repa/lib/python3.9/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+  File "/home/aalanov/.conda/envs/repa/lib/python3.9/site-packages/torch/distributed/run.py", line 918, in main
+    run(args)
+  File "/home/aalanov/.conda/envs/repa/lib/python3.9/site-packages/torch/distributed/run.py", line 909, in run
+    elastic_launch(
+  File "/home/aalanov/.conda/envs/repa/lib/python3.9/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/aalanov/.conda/envs/repa/lib/python3.9/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+generate.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-01-15_17:26:49
+  host      : cn-008.localdomain
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 54709)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
