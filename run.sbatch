@@ -16,6 +16,10 @@ source /opt/software/python/anaconda/2023_03/etc/profile.d/conda.sh
 
 # Activate your environment
 conda activate repa
+which python
+python -c "import sys; print(sys.path)"
+python -c "import torch; print(torch.__version__)"
+python -c "import torchvision; print(torchvision.__version__)"
 
 # Run generate.py with torchrun using standalone mode
 torchrun --nnodes=1 --nproc_per_node=1 --standalone generate.py \
