@@ -9,7 +9,8 @@
 #SBATCH -A proj_1637
 module load Python/Anaconda_v03.2023
 
-conda deactivate
+source /opt/software/python/anaconda/2023_03/etc/profile.d/conda.sh
+
 conda activate repa
 
 
