@@ -5,17 +5,20 @@
 #SBATCH --gpus=1
 #SBATCH --cpus-per-task=8
 #SBATCH --time=04:00:00
-#SBATCH --constraint="type_a"   
+#SBATCH --constraint="type_a"
 #SBATCH -A proj_1637
+
+# Load Anaconda module
 module load Python/Anaconda_v03.2023
 
+# Initialize conda for non-interactive shells
 source /opt/software/python/anaconda/2023_03/etc/profile.d/conda.sh
 
+# Activate your environment
 conda activate repa
 
-
-
-torchrun --nnodes=1 --nproc_per_node=1 generate.py \
+# Run generate.py with torchrun using standalone mode
+torchrun --nnodes=1 --nproc_per_node=1 --standalone generate.py \
   --model SiT-XL/2 \
   --num-fid-samples=50000 \
   --encoder-depth=8 \
@@ -24,4 +27,4 @@ torchrun --nnodes=1 --nproc_per_node=1 generate.py \
   --mode=sde \
   --num-steps=250 \
   --cfg-scale=1.8 \
-  --guidance-high=0.7 \
+  --guidance-high=0.7
