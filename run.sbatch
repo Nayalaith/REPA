@@ -6,7 +6,7 @@
 #SBATCH --cpus-per-task=8
 #SBATCH --time=04:00:00
 #SBATCH --constraint="type_a"   
-
+#SBATCH -A proj_1637
 module load Python/Anaconda_v03.2023
 
 conda activate repa
