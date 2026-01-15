@@ -1,0 +1,47 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+ModuleNotFoundError: No module named 'torchvision'
+Traceback (most recent call last):
+  File "/home/aalanov/laith/REPA/generate.py", line 16, in <module>
+    from models.sit import SiT_models
+  File "/home/aalanov/laith/REPA/models/sit.py", line 13, in <module>
+    from timm.models.vision_transformer import PatchEmbed, Attention, Mlp
+  File "/home/aalanov/.local/lib/python3.10/site-packages/timm/__init__.py", line 2, in <module>
+    from .layers import is_scriptable, is_exportable, set_scriptable, set_exportable
+  File "/home/aalanov/.local/lib/python3.10/site-packages/timm/layers/__init__.py", line 8, in <module>
+    from .classifier import create_classifier, ClassifierHead, NormMlpClassifierHead, ClNormMlpClassifierHead
+  File "/home/aalanov/.local/lib/python3.10/site-packages/timm/layers/classifier.py", line 15, in <module>
+    from .create_norm import get_norm_layer
+  File "/home/aalanov/.local/lib/python3.10/site-packages/timm/layers/create_norm.py", line 14, in <module>
+    from torchvision.ops.misc import FrozenBatchNorm2d
+ModuleNotFoundError: No module named 'torchvision'
+[2026-01-15 17:08:59,543] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 112811) of binary: /opt/software/python/anaconda/2023_03/bin/python
+Traceback (most recent call last):
+  File "/opt/software/python/anaconda/2023_03/bin/torchrun", line 10, in <module>
+    sys.exit(main())
+  File "/home/aalanov/.local/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "/home/aalanov/.local/lib/python3.10/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/home/aalanov/.local/lib/python3.10/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/home/aalanov/.local/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/aalanov/.local/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+generate.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-01-15_17:08:59
+  host      : cn-001.localdomain
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 112811)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
