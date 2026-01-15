@@ -9,8 +9,8 @@
 #SBATCH -A proj_1637
 module load Python/Anaconda_v03.2023
 
-source deactivate
-source activate repa
+conda deactivate
+conda activate repa
 
 
 
