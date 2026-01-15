@@ -1,2 +1,48 @@
 /home/aalanov/.local/lib/python3.9/site-packages/wandb/sdk/launch/builder/build.py:11: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
   import pkg_resources
+Traceback (most recent call last):
+  File "/home/aalanov/laith/REPA/generate.py", line 17, in <module>
+    from diffusers.models import AutoencoderKL
+  File "/home/aalanov/.conda/envs/repa/lib/python3.9/site-packages/diffusers/__init__.py", line 5, in <module>
+    from .utils import (
+  File "/home/aalanov/.conda/envs/repa/lib/python3.9/site-packages/diffusers/utils/__init__.py", line 21, in <module>
+    from .constants import (
+  File "/home/aalanov/.conda/envs/repa/lib/python3.9/site-packages/diffusers/utils/constants.py", line 64, in <module>
+    dep_version_check("peft")
+  File "/home/aalanov/.conda/envs/repa/lib/python3.9/site-packages/diffusers/dependency_versions_check.py", line 34, in dep_version_check
+    require_version(deps[pkg], hint)
+  File "/home/aalanov/.conda/envs/repa/lib/python3.9/site-packages/diffusers/utils/versions.py", line 111, in require_version
+    _compare_versions(op, got_ver, want_ver, requirement, pkg, hint)
+  File "/home/aalanov/.conda/envs/repa/lib/python3.9/site-packages/diffusers/utils/versions.py", line 44, in _compare_versions
+    raise ImportError(
+ImportError: peft>=0.17.0 is required for a normal functioning of this module, but found peft==0.7.0.
+E0115 17:02:08.912755 109576 site-packages/torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 1) local_rank: 0 (pid: 109618) of binary: /home/aalanov/.conda/envs/repa/bin/python3.9
+Traceback (most recent call last):
+  File "/home/aalanov/.conda/envs/repa/bin/torchrun", line 7, in <module>
+    sys.exit(main())
+  File "/home/aalanov/.conda/envs/repa/lib/python3.9/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+  File "/home/aalanov/.conda/envs/repa/lib/python3.9/site-packages/torch/distributed/run.py", line 918, in main
+    run(args)
+  File "/home/aalanov/.conda/envs/repa/lib/python3.9/site-packages/torch/distributed/run.py", line 909, in run
+    elastic_launch(
+  File "/home/aalanov/.conda/envs/repa/lib/python3.9/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/aalanov/.conda/envs/repa/lib/python3.9/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+generate.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-01-15_17:02:08
+  host      : cn-001.localdomain
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 109618)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
