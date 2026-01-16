@@ -1,0 +1,5 @@
+Python binary: /home/aalanov/.conda/envs/repa/bin/python
+sys.path: ['', '/home/aalanov/.conda/envs/repa/lib/python39.zip', '/home/aalanov/.conda/envs/repa/lib/python3.9', '/home/aalanov/.conda/envs/repa/lib/python3.9/lib-dynload', '/home/aalanov/.conda/envs/repa/lib/python3.9/site-packages', '/home/aalanov/.conda/envs/repa/lib/python3.9/site-packages/setuptools/_vendor', '/tmp/job-3535116/tmpcairii1f']
+Torch version: 2.6.0+cu124
+Torchvision version: 0.21.0+cu124
+Starting rank=0, seed=0, world_size=1.
