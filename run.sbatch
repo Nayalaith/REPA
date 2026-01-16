@@ -5,28 +5,45 @@
 #SBATCH --gpus=1
 #SBATCH --cpus-per-task=8
 #SBATCH --time=04:00:00
-#SBATCH --constraint="[type_a|type_b|type_c]"
+#SBATCH --constraint=type_a|type_b|type_c
 #SBATCH -A proj_1637
 
-# Load Anaconda module
+############################
+# Load cluster modules
+############################
 module load Python/Anaconda_v03.2023
 module load CUDA/12.2
 
-# Initialize conda for non-interactive shells
-# source /opt/software/python/anaconda/2023_03/etc/profile.d/conda.sh
+############################
+# Proper conda initialization
+############################
+source /opt/software/python/anaconda/2023_03/etc/profile.d/conda.sh
 
-# unset PYTHONPATH
-# export PYTHONNOUSERSITE=1
-# Activate your environment
-conda deactivate
+############################
+# Prevent pollution from ~/.local
+############################
+export PYTHONNOUSERSITE=1
+unset PYTHONPATH
+
+############################
+# Activate environment
+############################
 conda activate repa
-which python
-python -c "import sys; print(sys.path)"
-python -c "import torch; print(torch.__version__)"
-python -c "import torchvision; print(torchvision.__version__)"
-# export LD_LIBRARY_PATH=$CUDA_HOME/lib64:$LD_LIBRARY_PATH
 
-# Run generate.py with torchrun using standalone mode
+############################
+# Debug information
+############################
+echo "Python binary: $(which python)"
+python - << 'EOF'
+import sys, torch, torchvision
+print("sys.path:", sys.path)
+print("Torch version:", torch.__version__)
+print("Torchvision version:", torchvision.__version__)
+EOF
+
+############################
+# Launch job
+############################
 torchrun --nnodes=1 --nproc_per_node=1 --standalone generate.py \
   --model SiT-XL/2 \
   --num-fid-samples=50000 \
