@@ -85,7 +85,7 @@ def main(args):
             )
     model.load_state_dict(state_dict)
     model.eval()  # important!
-    vae = AutoencoderKL.from_pretrained("./models/sd-vae-ft-mse",torch_dtype=torch.float16).to(device)
+    vae = AutoencoderKL.from_pretrained("models/sd-vae-ft-mse/models--stabilityai--sd-vae-ft-mse/snapshots/31f26fdeee1355a5c34592e401dd41e45d25a493").to(device)
 
     assert args.cfg_scale >= 1.0, "In almost all cases, cfg_scale be >= 1.0"
     using_cfg = args.cfg_scale > 1.0
