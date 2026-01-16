@@ -1,0 +1,9 @@
+Python binary: /home/aalanov/.conda/envs/repa/bin/python
+sys.path: ['', '/home/aalanov/.conda/envs/repa/lib/python39.zip', '/home/aalanov/.conda/envs/repa/lib/python3.9', '/home/aalanov/.conda/envs/repa/lib/python3.9/lib-dynload', '/home/aalanov/.conda/envs/repa/lib/python3.9/site-packages', '/home/aalanov/.conda/envs/repa/lib/python3.9/site-packages/setuptools/_vendor', '/tmp/job-3535639/tmpj9608zj4']
+Torch version: 2.6.0+cu124
+Torchvision version: 0.21.0+cu124
+Starting rank=0, seed=0, world_size=1.
+Saving .png samples at samples/SiT-XL-2-SiT-XL-2-256x256-size-256-vae-ema-cfg-1.8-seed-0-sde
+Total number of images that will be sampled: 50000
+SiT Parameters: 683,242,512
+projector Parameters: 8,131,328
