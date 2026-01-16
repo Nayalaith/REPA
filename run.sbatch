@@ -15,6 +15,8 @@ module load CUDA/12.2
 # Initialize conda for non-interactive shells
 source /opt/software/python/anaconda/2023_03/etc/profile.d/conda.sh
 
+unset PYTHONPATH
+export PYTHONNOUSERSITE=1
 # Activate your environment
 conda activate repa
 which python
