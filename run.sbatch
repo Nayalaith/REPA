@@ -13,11 +13,12 @@ module load Python/Anaconda_v03.2023
 module load CUDA/12.2
 
 # Initialize conda for non-interactive shells
-source /opt/software/python/anaconda/2023_03/etc/profile.d/conda.sh
+# source /opt/software/python/anaconda/2023_03/etc/profile.d/conda.sh
 
-unset PYTHONPATH
-export PYTHONNOUSERSITE=1
+# unset PYTHONPATH
+# export PYTHONNOUSERSITE=1
 # Activate your environment
+conda deactivate
 conda activate repa
 which python
 python -c "import sys; print(sys.path)"
