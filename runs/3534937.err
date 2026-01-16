@@ -1,0 +1,115 @@
+Traceback (most recent call last):
+  File "/home/aalanov/.conda/envs/repa/lib/python3.9/site-packages/diffusers/utils/import_utils.py", line 1016, in _get_module
+    return importlib.import_module("." + module_name, self.__name__)
+  File "/home/aalanov/.conda/envs/repa/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/aalanov/.conda/envs/repa/lib/python3.9/site-packages/diffusers/loaders/peft.py", line 25, in <module>
+    from ..hooks.group_offloading import _maybe_remove_and_reapply_group_offloading
+  File "/home/aalanov/.conda/envs/repa/lib/python3.9/site-packages/diffusers/hooks/__init__.py", line 25, in <module>
+    from .layerwise_casting import apply_layerwise_casting, apply_layerwise_casting_hook
+  File "/home/aalanov/.conda/envs/repa/lib/python3.9/site-packages/diffusers/hooks/layerwise_casting.py", line 36, in <module>
+    from peft.helpers import disable_input_dtype_casting
+  File "/home/aalanov/.conda/envs/repa/lib/python3.9/site-packages/peft/__init__.py", line 17, in <module>
+    from .auto import (
+  File "/home/aalanov/.conda/envs/repa/lib/python3.9/site-packages/peft/auto.py", line 32, in <module>
+    from .peft_model import (
+  File "/home/aalanov/.conda/envs/repa/lib/python3.9/site-packages/peft/peft_model.py", line 33, in <module>
+    from huggingface_hub import HfFileSystem, ModelCard, ModelCardData, hf_hub_download
+  File "/home/aalanov/.conda/envs/repa/lib/python3.9/site-packages/huggingface_hub/__init__.py", line 1044, in __getattr__
+    submod = importlib.import_module(submod_path)
+  File "/home/aalanov/.conda/envs/repa/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/home/aalanov/.conda/envs/repa/lib/python3.9/site-packages/huggingface_hub/hf_file_system.py", line 12, in <module>
+    import fsspec
+ModuleNotFoundError: No module named 'fsspec'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/aalanov/.conda/envs/repa/lib/python3.9/site-packages/diffusers/utils/import_utils.py", line 1016, in _get_module
+    return importlib.import_module("." + module_name, self.__name__)
+  File "/home/aalanov/.conda/envs/repa/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/aalanov/.conda/envs/repa/lib/python3.9/site-packages/diffusers/models/autoencoders/__init__.py", line 1, in <module>
+    from .autoencoder_asym_kl import AsymmetricAutoencoderKL
+  File "/home/aalanov/.conda/envs/repa/lib/python3.9/site-packages/diffusers/models/autoencoders/autoencoder_asym_kl.py", line 23, in <module>
+    from .vae import AutoencoderMixin, DecoderOutput, DiagonalGaussianDistribution, Encoder, MaskConditionDecoder
+  File "/home/aalanov/.conda/envs/repa/lib/python3.9/site-packages/diffusers/models/autoencoders/vae.py", line 25, in <module>
+    from ..unets.unet_2d_blocks import (
+  File "/home/aalanov/.conda/envs/repa/lib/python3.9/site-packages/diffusers/models/unets/__init__.py", line 6, in <module>
+    from .unet_2d import UNet2DModel
+  File "/home/aalanov/.conda/envs/repa/lib/python3.9/site-packages/diffusers/models/unets/unet_2d.py", line 24, in <module>
+    from .unet_2d_blocks import UNetMidBlock2D, get_down_block, get_up_block
+  File "/home/aalanov/.conda/envs/repa/lib/python3.9/site-packages/diffusers/models/unets/unet_2d_blocks.py", line 36, in <module>
+    from ..transformers.dual_transformer_2d import DualTransformer2DModel
+  File "/home/aalanov/.conda/envs/repa/lib/python3.9/site-packages/diffusers/models/transformers/__init__.py", line 5, in <module>
+    from .auraflow_transformer_2d import AuraFlowTransformer2DModel
+  File "/home/aalanov/.conda/envs/repa/lib/python3.9/site-packages/diffusers/models/transformers/auraflow_transformer_2d.py", line 23, in <module>
+    from ...loaders import FromOriginalModelMixin, PeftAdapterMixin
+  File "<frozen importlib._bootstrap>", line 1055, in _handle_fromlist
+  File "/home/aalanov/.conda/envs/repa/lib/python3.9/site-packages/diffusers/utils/import_utils.py", line 1006, in __getattr__
+    module = self._get_module(self._class_to_module[name])
+  File "/home/aalanov/.conda/envs/repa/lib/python3.9/site-packages/diffusers/utils/import_utils.py", line 1018, in _get_module
+    raise RuntimeError(
+RuntimeError: Failed to import diffusers.loaders.peft because of the following error (look up to see its traceback):
+No module named 'fsspec'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/aalanov/laith/REPA/generate.py", line 17, in <module>
+    from diffusers.models import AutoencoderKL
+  File "<frozen importlib._bootstrap>", line 1055, in _handle_fromlist
+  File "/home/aalanov/.conda/envs/repa/lib/python3.9/site-packages/diffusers/utils/import_utils.py", line 1006, in __getattr__
+    module = self._get_module(self._class_to_module[name])
+  File "/home/aalanov/.conda/envs/repa/lib/python3.9/site-packages/diffusers/utils/import_utils.py", line 1018, in _get_module
+    raise RuntimeError(
+RuntimeError: Failed to import diffusers.models.autoencoders.autoencoder_kl because of the following error (look up to see its traceback):
+Failed to import diffusers.loaders.peft because of the following error (look up to see its traceback):
+No module named 'fsspec'
+E0116 13:45:05.649727 28906 site-packages/torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 1) local_rank: 0 (pid: 28932) of binary: /home/aalanov/.conda/envs/repa/bin/python3.9
+Traceback (most recent call last):
+  File "/home/aalanov/.conda/envs/repa/bin/torchrun", line 7, in <module>
+    sys.exit(main())
+  File "/home/aalanov/.conda/envs/repa/lib/python3.9/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+  File "/home/aalanov/.conda/envs/repa/lib/python3.9/site-packages/torch/distributed/run.py", line 918, in main
+    run(args)
+  File "/home/aalanov/.conda/envs/repa/lib/python3.9/site-packages/torch/distributed/run.py", line 909, in run
+    elastic_launch(
+  File "/home/aalanov/.conda/envs/repa/lib/python3.9/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/aalanov/.conda/envs/repa/lib/python3.9/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+generate.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-01-16_13:45:05
+  host      : cn-005.localdomain
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 28932)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
