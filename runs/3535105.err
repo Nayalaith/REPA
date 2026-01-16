@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/opt/software/python/anaconda/2023_03/lib/python3.10/site-packages/torch/__init__.py", line 235, in <module>
+    from torch._C import *  # noqa: F403
+ImportError: /opt/software/python/anaconda/2023_03/lib/python3.10/site-packages/torch/lib/../../../.././libcusparse.so.12: symbol __nvJitLinkComplete_12_3, version libnvJitLink.so.12 not defined in file libnvJitLink.so.12 with link time reference
+Traceback (most recent call last):
+  File "/opt/software/python/anaconda/2023_03/bin/torchrun", line 7, in <module>
+    from torch.distributed.run import main
+  File "/opt/software/python/anaconda/2023_03/lib/python3.10/site-packages/torch/__init__.py", line 235, in <module>
+    from torch._C import *  # noqa: F403
+ImportError: /opt/software/python/anaconda/2023_03/lib/python3.10/site-packages/torch/lib/../../../.././libcusparse.so.12: symbol __nvJitLinkComplete_12_3, version libnvJitLink.so.12 not defined in file libnvJitLink.so.12 with link time reference
