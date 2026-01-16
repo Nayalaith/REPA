@@ -24,7 +24,7 @@ which python
 python -c "import sys; print(sys.path)"
 python -c "import torch; print(torch.__version__)"
 python -c "import torchvision; print(torchvision.__version__)"
-export LD_LIBRARY_PATH=$CUDA_HOME/lib64:$LD_LIBRARY_PATH
+# export LD_LIBRARY_PATH=$CUDA_HOME/lib64:$LD_LIBRARY_PATH
 
 # Run generate.py with torchrun using standalone mode
 torchrun --nnodes=1 --nproc_per_node=1 --standalone generate.py \
