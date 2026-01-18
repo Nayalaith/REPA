@@ -5,7 +5,7 @@
 #SBATCH --gpus=1
 #SBATCH --cpus-per-task=8
 #SBATCH --time=04:00:00
-#SBATCH --constraint=type_a|type_b|type_c
+#SBATCH --constraint=type_e
 #SBATCH -A proj_1637
 
 ############################
